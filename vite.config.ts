@@ -3,10 +3,11 @@ import react from "@vitejs/plugin-react";
 import tsConfigPath from "vite-tsconfig-paths";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
+import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tsConfigPath(), tailwindcss()],
+  plugins: [react(), tsConfigPath(), tailwindcss(), svgr()],
   base: "./",
   resolve: {
     alias: {
