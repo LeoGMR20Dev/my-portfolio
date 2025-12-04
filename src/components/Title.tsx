@@ -1,11 +1,11 @@
-import type { ComponentType } from "react";
+import type { ComponentType, HTMLProps } from "react";
 
 function Title({
   titleText,
   image: Image,
 }: {
   titleText: string;
-  image: ComponentType<any>;
+  image: ComponentType<HTMLProps<HTMLElement>>;
 }) {
   return (
     <div className="flex flex-row gap-x-2 items-center w-full">

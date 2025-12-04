@@ -1,6 +1,6 @@
 import AboutMeSvg from "@assets/svgs/about-me-icon.svg?react";
 import SectionWrapper from "./SectionWrapper";
-import Title from "src/Title";
+import Title from "src/components/Title";
 import { Ids } from "src/constants/ids";
 
 function AboutMe() {
