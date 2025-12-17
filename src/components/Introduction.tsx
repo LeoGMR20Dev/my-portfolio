@@ -1,9 +1,9 @@
 import ProfileImagePath from "@assets/profile.webp";
 import CommonLinkButton from "./CommonLinkButton";
-import LinkedlnSvg from "@assets/svgs/linkedln-white.svg?react"; //Do not erase the '?react' part
-import DownloadSvg from "@assets/svgs/download-white.svg?react";
-import GithubSvg from "@assets/svgs/github-white.svg?react";
 import { Ids } from "src/constants/ids";
+import LinkedlnSvg from "@assets/svgs/linkedln-white.svg?react"; //Do not erase the '?react' part
+import GithubSvg from "@assets/svgs/github-white.svg?react";
+import GmailSvg from "@assets/svgs/gmail-white.svg?react";
 
 function Introduction() {
   return (
@@ -31,20 +31,20 @@ function Introduction() {
       <div className="w-full flex flex-row flex-wrap justify-start items-center gap-x-4 gap-y-2">
         <CommonLinkButton
           text="Linkedln"
-          icon={<LinkedlnSvg className="size-5" />}
+          icon={LinkedlnSvg}
           redirectTo="https://www.linkedin.com/in/leandro-guillermo-morales-rada-878417315"
           target="_blank"
         />
         <CommonLinkButton
           text="GitHub"
-          icon={<GithubSvg className="size-5" />}
+          icon={GithubSvg}
           redirectTo="https://github.com/LeoGMR20Dev"
           target="_blank"
         />
         <CommonLinkButton
-          text="CV"
-          icon={<DownloadSvg className="size-5" />}
-          redirectTo="https://github.com/LeoGMR20Dev"
+          text="leoguimorales@gmail.com"
+          icon={GmailSvg}
+          redirectTo="mailto:leoguimorales@gmail.com"
           target="_blank"
         />
       </div>
